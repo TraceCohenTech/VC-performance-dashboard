@@ -34,4 +34,16 @@ export const FUNDS: FundRow[] = [
   { firm: "Founders Fund", fundName: "FFVIII", vintage: 2023, fundSizeUSDm: 979, grossTVPI: null, netTVPI: 1.3, netDPI: null, irrToLP: 0.47, strategyType: "Core" },
   { firm: "Founders Fund", fundName: "FF Growth I", vintage: 2020, fundSizeUSDm: 1700, grossTVPI: null, netTVPI: 1.2, netDPI: null, irrToLP: 0.07, strategyType: "Growth" },
   { firm: "Founders Fund", fundName: "FF Growth II", vintage: 2023, fundSizeUSDm: 3400, grossTVPI: null, netTVPI: 1.0, netDPI: null, irrToLP: 0.07, strategyType: "Growth" },
+
+  // Lightspeed (10 funds)
+  { firm: "Lightspeed", fundName: "Select I", vintage: 2014, fundSizeUSDm: 432, grossTVPI: null, netTVPI: 2.4, netDPI: 1.8, irrToLP: null, strategyType: "Growth" },
+  { firm: "Lightspeed", fundName: "Select II", vintage: 2016, fundSizeUSDm: 500, grossTVPI: null, netTVPI: 2.1, netDPI: 0.7, irrToLP: null, strategyType: "Growth" },
+  { firm: "Lightspeed", fundName: "Select III", vintage: 2018, fundSizeUSDm: 1400, grossTVPI: null, netTVPI: 1.6, netDPI: null, irrToLP: null, strategyType: "Growth" },
+  { firm: "Lightspeed", fundName: "VII", vintage: 2006, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 3.12, irrToLP: null, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "VIII", vintage: 2008, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 2.81, irrToLP: null, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "IX", vintage: 2012, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 3.88, irrToLP: null, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "X", vintage: 2014, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 1.01, irrToLP: null, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "XI", vintage: 2016, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 0.71, irrToLP: null, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "XII", vintage: 2018, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 0.24, irrToLP: null, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "XIII", vintage: 2020, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 0.09, irrToLP: null, strategyType: "Early" },
 ];
