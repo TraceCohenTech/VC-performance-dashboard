@@ -28,8 +28,11 @@ export default function AlphaLeaderboard({ rows }: Props) {
           Alpha per $1B Leaderboard
         </h3>
       </div>
-      <p className="text-xs text-slate-400 mb-4">
-        Top 10 funds by Net TVPI per $1B deployed — smaller funds with outsized returns
+      <p className="text-xs text-slate-500 mb-1">
+        Ranks funds by capital efficiency: Net TVPI divided by fund size in billions. A $50M fund at 7.8x scores 156, while a $3.6B fund at 1.2x scores just 0.3.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        Rewards smaller funds that generate outsized multiples. This metric penalizes scale — it answers "how much return per dollar of LP capital deployed?"
       </p>
       <div className="space-y-2">
         {ranked.map((r, i) => {

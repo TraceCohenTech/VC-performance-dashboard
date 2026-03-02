@@ -19,8 +19,11 @@ export default function CapitalRaisedTable({ data }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         Capital Raised Comparison
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        Full Throttle: 2023–Feb 2026 vs. prior 20 years
+      <p className="text-xs text-slate-500 mb-1">
+        How much LP capital each firm raised in the recent boom (2023–Feb 2026) vs. the prior 20 years. The bar shows total raised with the dark portion representing the recent period.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        Firms that raised more recently than historically are scaling fast — but rapid AUM growth can pressure returns. Watch for mismatches with performance data above.
       </p>
       <table className="w-full text-xs">
         <thead>

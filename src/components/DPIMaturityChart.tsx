@@ -33,8 +33,11 @@ export default function DPIMaturityChart({ rows }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         DPI Maturity Curve
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        Fund age vs. DPI/TVPI ratio — how fast do funds return capital?
+      <p className="text-xs text-slate-500 mb-1">
+        Each dot shows a fund's age (years since vintage) vs. its DPI/TVPI ratio — the percentage of paper gains that have been realized as actual cash back to LPs.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        DPI = "cash-on-cash" realized return. A fund at 90% means almost all gains are real. Funds near 0% are still paper returns. The dashed line marks the 50% threshold. Older funds should trend higher.
       </p>
       <ResponsiveContainer width="100%" height={360}>
         <ScatterChart margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>

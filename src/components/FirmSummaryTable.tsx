@@ -17,8 +17,11 @@ export default function FirmSummaryTable({ summaries }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         Firm-Level Summary
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        Aggregated performance by firm
+      <p className="text-xs text-slate-500 mb-1">
+        Aggregates all funds per firm into a single row. Shows average and median TVPI, total capital deployed, and the most common performance regime.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        Median TVPI is more robust than average for firms with outlier funds. Compare Avg DPI to see which firms actually return cash vs. hold paper gains.
       </p>
       <table className="w-full text-xs">
         <thead>

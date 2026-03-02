@@ -30,8 +30,11 @@ export default function VintageChart({ rows }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         Vintage Compression
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        Net TVPI by vintage year — bubble size = fund size
+      <p className="text-xs text-slate-500 mb-1">
+        Each dot is a fund plotted by the year it was raised (x-axis) against its net return multiple to LPs (y-axis). Larger dots = larger fund sizes.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        Shows whether newer fund vintages are generating lower multiples than older ones — a pattern called "vintage compression" caused by higher entry valuations and larger fund sizes.
       </p>
       <ResponsiveContainer width="100%" height={360}>
         <ScatterChart margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>

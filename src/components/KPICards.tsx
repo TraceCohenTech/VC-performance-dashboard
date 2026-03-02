@@ -28,7 +28,7 @@ const item = {
 function regimeColor(r: PerfRegime): string {
   if (r.startsWith("Generational")) return "text-emerald-600";
   if (r.startsWith("Strong")) return "text-blue-600";
-  if (r.startsWith("Institutional")) return "text-indigo-600";
+  if (r.startsWith("Institutional")) return "text-purple-600";
   if (r.startsWith("Capital")) return "text-amber-600";
   return "text-red-500";
 }
@@ -46,38 +46,44 @@ export default function KPICards({ rows }: Props) {
       label: "Avg Net TVPI",
       value: fmtX(avgTVPI),
       icon: TrendingUp,
-      color: "from-indigo-500 to-blue-500",
+      color: "from-blue-600 to-blue-400",
+      desc: "Mean net multiple across all filtered funds. Above 3x is strong.",
     },
     {
       label: "Median Net TVPI",
       value: fmtX(medTVPI),
       icon: Target,
-      color: "from-purple-500 to-indigo-500",
+      color: "from-emerald-600 to-emerald-400",
+      desc: "Middle fund multiple — less skewed by outliers than the average.",
     },
     {
       label: "Avg Fund Size",
       value: fmtUSDm(avgSize),
       icon: DollarSign,
-      color: "from-emerald-500 to-teal-500",
+      color: "from-amber-500 to-amber-400",
+      desc: "Mean capital per fund. Larger funds typically face return compression.",
     },
     {
       label: "Avg Alpha / $1B",
       value: avgAlpha != null ? fmt(avgAlpha, 1) : "—",
       icon: Zap,
-      color: "from-amber-500 to-orange-500",
+      color: "from-purple-600 to-purple-400",
+      desc: "Net TVPI normalized by $1B deployed — capital efficiency score.",
     },
     {
       label: "Avg DPI / TVPI",
       value: avgDPIRatio != null ? fmt(avgDPIRatio, 2) : "—",
       icon: PieChart,
-      color: "from-rose-500 to-pink-500",
+      color: "from-rose-500 to-rose-400",
+      desc: "What % of paper gains have been distributed back to LPs as cash.",
     },
     {
       label: "Top Regime",
       value: topRegime.split(" (")[0],
       icon: Award,
-      color: "from-slate-600 to-slate-800",
+      color: "from-slate-700 to-slate-500",
       textClass: regimeColor(topRegime),
+      desc: "Most common performance bucket among filtered funds.",
     },
   ];
 
@@ -109,6 +115,9 @@ export default function KPICards({ rows }: Props) {
             className={`text-2xl font-bold tracking-tight ${c.textClass || "text-slate-900"}`}
           >
             {c.value}
+          </span>
+          <span className="text-[10px] text-slate-400 leading-tight">
+            {c.desc}
           </span>
         </motion.div>
       ))}

@@ -22,8 +22,11 @@ export default function FundTable({ rows }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         Fund Performance Detail
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        {sorted.length} funds across {[...new Set(sorted.map((r) => r.firm))].length} firms
+      <p className="text-xs text-slate-500 mb-1">
+        Every fund in the dataset with key return metrics. Net TVPI = total value relative to paid-in capital (after fees). DPI = distributions actually paid back. Alpha/$1B normalizes TVPI by fund size.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        {sorted.length} funds across {[...new Set(sorted.map((r) => r.firm))].length} firms — sorted by firm, then vintage year. Color dot = performance regime classification.
       </p>
       <table className="w-full text-xs">
         <thead>

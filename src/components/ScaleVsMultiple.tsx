@@ -30,8 +30,11 @@ export default function ScaleVsMultiple({ rows }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         Scale vs. Multiple
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        Fund size vs. Net TVPI — do larger funds compress returns?
+      <p className="text-xs text-slate-500 mb-1">
+        Each dot is a fund plotted by its size in dollars (x-axis) against its net return multiple (y-axis). Tests the "scale ceiling" hypothesis.
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        Larger funds deploy more capital per deal and may struggle to find enough high-return opportunities. If dots trend downward to the right, scale is compressing returns.
       </p>
       <ResponsiveContainer width="100%" height={360}>
         <ScatterChart margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>

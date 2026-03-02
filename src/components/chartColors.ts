@@ -1,25 +1,25 @@
 export const FIRM_COLORS: Record<string, string> = {
-  Thrive: "#6366f1",
-  a16z: "#8b5cf6",
-  "Founders Fund": "#f59e0b",
-  Lightspeed: "#10b981",
-  Coatue: "#ef4444",
-  Greenoaks: "#06b6d4",
-  NEA: "#ec4899",
-  "General Catalyst": "#64748b",
+  Thrive: "#2563eb",       // blue-600
+  a16z: "#dc2626",         // red-600
+  "Founders Fund": "#f59e0b", // amber-500
+  Lightspeed: "#059669",   // emerald-600
+  Coatue: "#9333ea",       // purple-600
+  Greenoaks: "#06b6d4",    // cyan-500
+  NEA: "#ec4899",          // pink-500
+  "General Catalyst": "#64748b", // slate-500
 };
 
 export const STRATEGY_COLORS: Record<string, string> = {
-  Early: "#10b981",
-  Core: "#6366f1",
+  Early: "#059669",
+  Core: "#2563eb",
   Growth: "#f59e0b",
   Unknown: "#94a3b8",
 };
 
 export const REGIME_COLORS: Record<string, string> = {
   "Generational (5x+)": "#059669",
-  "Strong (3-5x)": "#3b82f6",
-  "Institutional (2-3x)": "#6366f1",
+  "Strong (3-5x)": "#2563eb",
+  "Institutional (2-3x)": "#9333ea",
   "Capital Preservation (1-2x)": "#f59e0b",
   "Value Destruction (<1x)": "#ef4444",
   Unknown: "#94a3b8",

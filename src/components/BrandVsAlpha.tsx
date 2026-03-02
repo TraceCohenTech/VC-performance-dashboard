@@ -51,8 +51,11 @@ export default function BrandVsAlpha({ rows, capitalRaised }: Props) {
       <h3 className="text-lg font-semibold text-slate-900 mb-1">
         Brand vs. Alpha Proxy
       </h3>
-      <p className="text-xs text-slate-400 mb-4">
-        Total capital raised vs. average TVPI (where performance data available)
+      <p className="text-xs text-slate-500 mb-1">
+        Compares how much capital each firm has raised (light bars, left axis) against their average fund return multiple (dark bars, right axis).
+      </p>
+      <p className="text-[11px] text-slate-400 mb-4">
+        Tests whether the biggest fundraisers also produce the best returns. Firms that raise heavily but return modestly may be selling brand over performance. Bars with no dark pair lack performance data.
       </p>
       <ResponsiveContainer width="100%" height={360}>
         <BarChart data={data} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
@@ -97,7 +100,7 @@ export default function BrandVsAlpha({ rows, capitalRaised }: Props) {
             yAxisId="left"
             dataKey="totalRaisedB"
             name="Total Raised ($B)"
-            fill="#c7d2fe"
+            fill="#bfdbfe"
             radius={[6, 6, 0, 0]}
           />
           <Bar
@@ -105,7 +108,7 @@ export default function BrandVsAlpha({ rows, capitalRaised }: Props) {
             dataKey="avgTVPI"
             name="Avg Net TVPI"
             radius={[6, 6, 0, 0]}
-            fill="#818cf8"
+            fill="#059669"
           />
         </BarChart>
       </ResponsiveContainer>

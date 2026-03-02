@@ -23,7 +23,8 @@ export default function Header({ fundCount, firmCount }: Props) {
         </h1>
       </div>
       <p className="text-slate-500 text-sm ml-[52px]">
-        Comparing top-tier venture fund returns across vintages and strategies
+        Comparing top-tier venture fund returns across vintages, strategies, and firm scale.
+        Net TVPI, DPI, and alpha metrics sourced from LP disclosures and public filings.
       </p>
       <div className="flex gap-2 mt-3 ml-[52px]">
         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700">
