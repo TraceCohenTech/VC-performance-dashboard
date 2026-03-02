@@ -46,4 +46,21 @@ export const FUNDS: FundRow[] = [
   { firm: "Lightspeed", fundName: "XI", vintage: 2016, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 0.71, irrToLP: null, strategyType: "Early" },
   { firm: "Lightspeed", fundName: "XII", vintage: 2018, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 0.24, irrToLP: null, strategyType: "Early" },
   { firm: "Lightspeed", fundName: "XIII", vintage: 2020, fundSizeUSDm: null, grossTVPI: null, netTVPI: null, netDPI: 0.09, irrToLP: null, strategyType: "Early" },
+  // CalPERS Lightspeed data (2022 vintage, supplement existing)
+  { firm: "Lightspeed", fundName: "Opportunity Fund II", vintage: 2022, fundSizeUSDm: 200, grossTVPI: null, netTVPI: 1.4, netDPI: null, irrToLP: 0.201, strategyType: "Growth" },
+  { firm: "Lightspeed", fundName: "Select V", vintage: 2022, fundSizeUSDm: 100, grossTVPI: null, netTVPI: 1.2, netDPI: null, irrToLP: 0.108, strategyType: "Growth" },
+  { firm: "Lightspeed", fundName: "XIV-A (Inception)", vintage: 2022, fundSizeUSDm: 45, grossTVPI: null, netTVPI: 1.4, netDPI: null, irrToLP: 0.169, strategyType: "Early" },
+  { firm: "Lightspeed", fundName: "XIV-B (Ignite)", vintage: 2022, fundSizeUSDm: 55, grossTVPI: null, netTVPI: 1.5, netDPI: null, irrToLP: 0.228, strategyType: "Early" },
+
+  // Insight Venture Partners (3 funds — CalPERS data)
+  { firm: "Insight", fundName: "Insight Growth-Buyout Coinvest (B)", vintage: 2015, fundSizeUSDm: 400, grossTVPI: null, netTVPI: 3.5, netDPI: null, irrToLP: 0.258, strategyType: "Growth" },
+  { firm: "Insight", fundName: "Insight Partners IX", vintage: 2015, fundSizeUSDm: 100, grossTVPI: null, netTVPI: 3.9, netDPI: null, irrToLP: 0.231, strategyType: "Core" },
+  { firm: "Insight", fundName: "Insight Partners X", vintage: 2018, fundSizeUSDm: 250, grossTVPI: null, netTVPI: 2.8, netDPI: null, irrToLP: 0.224, strategyType: "Core" },
+
+  // Khosla Ventures (2 funds — CalPERS data)
+  { firm: "Khosla", fundName: "Khosla Ventures III", vintage: 2009, fundSizeUSDm: 200, grossTVPI: null, netTVPI: 1.8, netDPI: null, irrToLP: 0.097, strategyType: "Early" },
+  { firm: "Khosla", fundName: "Khosla Ventures Seed", vintage: 2009, fundSizeUSDm: 60, grossTVPI: null, netTVPI: 1.2, netDPI: null, irrToLP: 0.014, strategyType: "Early" },
+
+  // Tiger Global (1 fund — CalPERS data)
+  { firm: "Tiger Global", fundName: "Tiger Global PIP XV", vintage: 2022, fundSizeUSDm: 300, grossTVPI: null, netTVPI: 0.8, netDPI: null, irrToLP: -0.078, strategyType: "Growth" },
 ];

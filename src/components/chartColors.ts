@@ -3,6 +3,9 @@ export const FIRM_COLORS: Record<string, string> = {
   a16z: "#dc2626",         // red-600
   "Founders Fund": "#f59e0b", // amber-500
   Lightspeed: "#059669",   // emerald-600
+  Insight: "#7c3aed",      // violet-600
+  Khosla: "#0891b2",       // cyan-600
+  "Tiger Global": "#e11d48", // rose-600
   Coatue: "#9333ea",       // purple-600
   Greenoaks: "#06b6d4",    // cyan-500
   NEA: "#ec4899",          // pink-500
