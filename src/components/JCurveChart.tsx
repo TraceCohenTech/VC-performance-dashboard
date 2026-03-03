@@ -23,7 +23,7 @@ const NO_RETURN_OPTIONS = [5, 7, 10] as const;
 
 export default function JCurveChart({ rows }: Props) {
   const [noReturnYears, setNoReturnYears] = useState<number>(7);
-  const [showIndividual, setShowIndividual] = useState(false);
+  const [showFirmAvg, setShowFirmAvg] = useState(false);
 
   // Simulate all valid funds
   const allCurves = useMemo(() => {
@@ -65,14 +65,7 @@ export default function JCurveChart({ rows }: Props) {
     });
   }, [allCurves]);
 
-  // Top 12 individual funds by TVPI
-  const topFundCurves = useMemo(() => {
-    return [...allCurves]
-      .sort((a, b) => b.finalTVPI - a.finalTVPI)
-      .slice(0, 12);
-  }, [allCurves]);
-
-  const displayCurves = showIndividual ? topFundCurves : firmCurves;
+  const displayCurves = showFirmAvg ? firmCurves : allCurves;
 
   // Build unified dataset: each row = { year, firm1: val, firm2: val, ... }
   const chartData = useMemo(() => {
@@ -134,16 +127,16 @@ export default function JCurveChart({ rows }: Props) {
           </div>
         </div>
 
-        {/* Individual funds toggle */}
+        {/* Firm average toggle */}
         <label className="flex items-center gap-1.5 cursor-pointer">
           <input
             type="checkbox"
-            checked={showIndividual}
-            onChange={(e) => setShowIndividual(e.target.checked)}
+            checked={showFirmAvg}
+            onChange={(e) => setShowFirmAvg(e.target.checked)}
             className="rounded border-slate-300 text-slate-900 focus:ring-slate-500"
           />
           <span className="text-[11px] text-slate-500">
-            Show individual funds
+            Average by firm
           </span>
         </label>
       </div>
@@ -201,18 +194,21 @@ export default function JCurveChart({ rows }: Props) {
               );
             }}
           />
-          <Legend
-            verticalAlign="top"
-            align="right"
-            wrapperStyle={{ fontSize: 11, paddingBottom: 8 }}
-          />
+          {showFirmAvg && (
+            <Legend
+              verticalAlign="top"
+              align="right"
+              wrapperStyle={{ fontSize: 11, paddingBottom: 8 }}
+            />
+          )}
           {displayCurves.map((c) => (
             <Line
               key={c.label}
               type="monotone"
               dataKey={c.label}
               stroke={FIRM_COLORS[c.firm] || "#94a3b8"}
-              strokeWidth={2}
+              strokeWidth={showFirmAvg ? 2 : 1.5}
+              strokeOpacity={showFirmAvg ? 1 : 0.7}
               dot={false}
               activeDot={{ r: 4 }}
               connectNulls
