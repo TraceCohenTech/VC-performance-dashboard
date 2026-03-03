@@ -1,6 +1,6 @@
 export const FIRM_COLORS: Record<string, string> = {
   Thrive: "#2563eb",       // blue-600
-  a16z: "#dc2626",         // red-600
+  a16z: "#b8860b",         // dark gold (a16z brand)
   "Founders Fund": "#f59e0b", // amber-500
   Lightspeed: "#059669",   // emerald-600
   Insight: "#7c3aed",      // violet-600
