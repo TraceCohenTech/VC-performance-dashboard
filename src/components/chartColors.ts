@@ -1,6 +1,6 @@
 export const FIRM_COLORS: Record<string, string> = {
   Thrive: "#2563eb",       // blue-600
-  a16z: "#b8860b",         // dark gold (a16z brand)
+  a16z: "#6b7280",         // silver/gray
   "Founders Fund": "#f59e0b", // amber-500
   Lightspeed: "#059669",   // emerald-600
   Insight: "#7c3aed",      // violet-600
@@ -9,7 +9,7 @@ export const FIRM_COLORS: Record<string, string> = {
   Coatue: "#9333ea",       // purple-600
   Greenoaks: "#06b6d4",    // cyan-500
   NEA: "#ec4899",          // pink-500
-  "General Catalyst": "#64748b", // slate-500
+  "General Catalyst": "#d97706", // amber-600
 };
 
 export const STRATEGY_COLORS: Record<string, string> = {
