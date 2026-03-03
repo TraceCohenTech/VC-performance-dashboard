@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   ScatterChart,
   Scatter,
@@ -9,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 import type { DerivedFundRow } from "../types";
 import { FIRM_COLORS } from "./chartColors";
 import { mean } from "../utils/calculations";
@@ -18,8 +17,6 @@ import { fmtX } from "../utils/format";
 type Props = { rows: DerivedFundRow[] };
 
 export default function CreativeIdeas({ rows }: Props) {
-  const [expanded, setExpanded] = useState(false);
-
   // Alpha Decay: fund sequence per firm
   const firmFunds = new Map<string, DerivedFundRow[]>();
   for (const r of rows) {
@@ -58,36 +55,17 @@ export default function CreativeIdeas({ rows }: Props) {
       transition={{ duration: 0.5 }}
       className="glass rounded-2xl p-6"
     >
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between"
-      >
-        <div className="flex items-center gap-2">
-          <Lightbulb className="w-5 h-5 text-amber-500" />
-          <h3 className="text-lg font-semibold text-slate-900">
-            Creative Views
-          </h3>
-        </div>
-        {expanded ? (
-          <ChevronUp className="w-5 h-5 text-slate-400" />
-        ) : (
-          <ChevronDown className="w-5 h-5 text-slate-400" />
-        )}
-      </button>
-      <p className="text-xs text-slate-400 mt-1">
+      <div className="flex items-center gap-2 mb-1">
+        <Lightbulb className="w-5 h-5 text-amber-500" />
+        <h3 className="text-lg font-semibold text-slate-900">
+          Creative Views
+        </h3>
+      </div>
+      <p className="text-xs text-slate-400 mb-6">
         Alternative perspectives on the data
       </p>
 
-      <AnimatePresence>
-        {expanded && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden"
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Alpha Decay Curve */}
               <div className="bg-slate-50/50 rounded-xl p-4">
                 <h4 className="text-sm font-semibold text-slate-800 mb-1">
@@ -199,10 +177,7 @@ export default function CreativeIdeas({ rows }: Props) {
                   </table>
                 </div>
               </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      </div>
     </motion.div>
   );
 }
