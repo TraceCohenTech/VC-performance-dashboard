@@ -71,7 +71,7 @@ export default function App() {
       </div>
 
       {/* Financial Deep-Dive */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <div className="space-y-6 mb-8">
         <JCurveChart rows={filtered} />
         <WaterfallChart rows={filtered} />
       </div>

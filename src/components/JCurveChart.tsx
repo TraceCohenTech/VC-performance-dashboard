@@ -141,7 +141,7 @@ export default function JCurveChart({ rows }: Props) {
         </label>
       </div>
 
-      <ResponsiveContainer width="100%" height={360}>
+      <ResponsiveContainer width="100%" height={480}>
         <LineChart data={chartData} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
           <XAxis
