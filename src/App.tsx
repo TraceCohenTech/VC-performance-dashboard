@@ -14,6 +14,8 @@ import FundTable from "./components/FundTable";
 import FirmSummaryTable from "./components/FirmSummaryTable";
 import CapitalRaisedTable from "./components/CapitalRaisedTable";
 import AlphaLeaderboard from "./components/AlphaLeaderboard";
+import JCurveChart from "./components/JCurveChart";
+import WaterfallChart from "./components/WaterfallChart";
 import CreativeIdeas from "./components/CreativeIdeas";
 import Footer from "./components/Footer";
 
@@ -66,6 +68,12 @@ export default function App() {
         <ScaleVsMultiple rows={filtered} />
         <DPIMaturityChart rows={filtered} />
         <BrandVsAlpha rows={filtered} capitalRaised={CAPITAL_RAISED} />
+      </div>
+
+      {/* Financial Deep-Dive */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <JCurveChart rows={filtered} />
+        <WaterfallChart rows={filtered} />
       </div>
 
       {/* Alpha Leaderboard */}

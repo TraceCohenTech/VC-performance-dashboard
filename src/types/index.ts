@@ -52,3 +52,30 @@ export type FirmSummary = {
   avgIRR: number | null;
   topRegime: PerfRegime;
 };
+
+export type JCurvePoint = {
+  year: number;
+  netMultiple: number;
+};
+
+export type JCurveResult = {
+  label: string;
+  firm: string;
+  finalTVPI: number;
+  curve: JCurvePoint[];
+};
+
+export type WaterfallRow = {
+  label: string;
+  firm: string;
+  committed: number;
+  managementFees: number;
+  investedCapital: number;
+  totalValue: number;
+  returnOfCapital: number;
+  lpProfit: number;
+  gpCarry: number;
+  lpTotal: number;
+  gpTotal: number;
+  gpTakePercent: number;
+};
