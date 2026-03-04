@@ -9,6 +9,7 @@ export const FIRM_COLORS: Record<string, string> = {
   Coatue: "#9333ea",       // purple-600
   Greenoaks: "#06b6d4",    // cyan-500
   NEA: "#ec4899",          // pink-500
+  USV: "#15803d",              // green-700
   "General Catalyst": "#d97706", // amber-600
 };
 

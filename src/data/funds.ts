@@ -63,4 +63,13 @@ export const FUNDS: FundRow[] = [
 
   // Tiger Global (1 fund — CalPERS data)
   { firm: "Tiger Global", fundName: "Tiger Global PIP XV", vintage: 2022, fundSizeUSDm: 300, grossTVPI: null, netTVPI: 0.8, netDPI: null, irrToLP: -0.078, strategyType: "Growth" },
+
+  // Union Square Ventures (7 funds — The Information / Cambridge Associates, as of June 2018)
+  { firm: "USV", fundName: "USV 2004", vintage: 2004, fundSizeUSDm: 125, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.67, strategyType: "Early" },
+  { firm: "USV", fundName: "USV 2008", vintage: 2008, fundSizeUSDm: 156, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.22, strategyType: "Early" },
+  { firm: "USV", fundName: "USV Opportunity 2010", vintage: 2010, fundSizeUSDm: 165, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.60, strategyType: "Growth" },
+  { firm: "USV", fundName: "USV 2012", vintage: 2012, fundSizeUSDm: 200, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.32, strategyType: "Early" },
+  { firm: "USV", fundName: "USV 2014", vintage: 2014, fundSizeUSDm: 166, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.17, strategyType: "Early" },
+  { firm: "USV", fundName: "USV Opportunity 2014", vintage: 2014, fundSizeUSDm: 174, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.21, strategyType: "Growth" },
+  { firm: "USV", fundName: "USV 2016", vintage: 2016, fundSizeUSDm: 175, grossTVPI: null, netTVPI: null, netDPI: null, irrToLP: 0.32, strategyType: "Early" },
 ];
