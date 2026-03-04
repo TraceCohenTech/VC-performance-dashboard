@@ -5,7 +5,8 @@ const SOURCES = [
   { name: "Lightspeed Venture Partners", url: "https://lsvp.com", note: "Early-stage fund track record (as of Sep 30, 2024)" },
   { name: "The Information", url: "https://www.theinformation.com", note: "USV fund performance (IRR data)" },
   { name: "Cambridge Associates", url: "https://www.cambridgeassociates.com", note: "VC quartile benchmarks" },
-  { name: "Newcomer", url: "https://www.newcomer.co", note: "Thrive, a16z, Founders Fund performance data" },
+  { name: "Newcomer", url: "https://www.newcomer.co", note: "Thrive, a16z performance data" },
+  { name: "Arfur Rock", url: "https://www.arfurrock.com", note: "Founders Fund performance data" },
 ];
 
 export default function Footer() {
